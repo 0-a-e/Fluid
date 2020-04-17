@@ -1,0 +1,355 @@
+button,.button{
+    border-radius: 15px;
+    border: none;
+    background: #4492F4;
+    color: fff;
+    font-size: 15px;
+    padding: 15px;
+    box-shadow:  1em -1em -2em #4492F4, 
+    1em -1em -2em #4492F4;
+    transition: 0.1s;
+    text-decoration: none;
+    border: solid 3px #4492F4;
+}
+.fixed{
+  position: fixed;
+}
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+header{
+  position: relative;
+  margin: 0 auto;
+  background: #e5e5e5;
+  width: 100%;
+  height: 3em;
+  vertical-align: middle;
+}
+/*loading by spectre.css Thanks!*/
+.loading {
+    color: transparent !important;
+    min-height: .8rem;
+    pointer-events: none;
+    position: relative;
+}
+.loading.big {
+    min-height: 2rem;
+  }
+  
+  .loading.big::after {
+    height: 1.6rem;
+    margin-left: -.8rem;
+    margin-top: -.8rem;
+    width: 1.6rem;
+  }
+  .loading::after {
+    animation: loading 500ms infinite linear;
+    border: .3rem solid #4492F4;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: .8rem;
+    left: 50%;
+    margin-left: -.4rem;
+    margin-top: -.4rem;
+    position: absolute;
+    top: 50%;
+    width: .8rem;
+    z-index: 1;
+}
+  @keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.button:disabled,button:disabled {
+    opacity: 0.7;
+    user-select: none;
+}
+.button:hover:disabled,button:hover:disabled {
+    opacity: 0.7;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+}
+code{
+    padding: 10px;
+    background: #364240;
+    color: #F6F6FE;
+    border-radius: 15px;
+}
+.button:active:disabled,button:active:disabled {
+    opacity: 0.7;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+}
+button:active,.button:active{
+opacity: 0.7;
+box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+}
+button:hover,.button:hover{
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+}
+div.card{
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    box-shadow: 12px 12px 26px 0 rgba(0, 0, 0, 0.10);
+    .top{
+        border-radius:20px 20px 0px 0px;
+        /*max-height: 250px;*/
+        width: 100%;
+    }
+    .content{
+        padding: 15px;
+    }
+    .title{
+        font-size: 25px;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+  /*      padding-left: 10px;*/
+        padding-top: 5px;
+        background:#F6F6FE;
+       font-weight: 600;
+        tx{
+            position: relative;
+            margin-left: 15px;
+        }
+    }
+}
+.form{
+    input{
+        border-radius: 10px;
+        background: #F6F6FE;
+        border: 0px;
+        padding: 10px;
+        transition: 0.2s;
+        margin: 5px;
+        border: solid 1px #4492F4;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+    input:hover{
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    }
+    textarea{
+        border-radius: 10px;
+        background: #F6F6FE;
+        border: 0px;
+        padding: 10px;
+        transition: 0.2s;
+        margin: 5px;
+        resize: none;
+        border: solid 1px #4492F4;
+    }textarea:hover{
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    }
+    .select-container{
+        border-radius: 10px;
+        background: #F6F6FE;
+        border: 0px;
+        padding: 10px;
+        transition: 0.2;
+        margin: 5px;
+        resize: none;
+        vertical-align: middle;
+        display:inline-block;
+        font-size: inherit;
+        border: solid 1px #4492F4;
+        width: initial;
+        color: #606060;
+        fill: #606060;
+    }
+    ion-icon{
+        color: #606060;
+        fill: #606060;
+        font-size:20px;
+        vertical-align: middle;
+    }
+    select{
+        text-overflow: '';
+        font-size: 15px;
+        appearance: button;
+        background: transparent;
+        position: relative;
+        color: #606060;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        border: solid 0px #000;
+    }
+
+}
+.select-container:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+.searchbar{
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    box-shadow: 0px 0px 30px #e3e3e3;
+    input {
+        width: 100%;
+        border: none;
+        height: 2em;
+        font-size: 14px;
+        color: #59595A;
+      }
+}
+input[type="submit"]{
+    color:#606060;
+}
+.minicard{
+  position: relative;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.2s;
+  box-shadow: 12px 12px 26px 0 rgba(0, 0, 0, 0.25);
+/*  max-width: 3em;
+  max-height: 1em;*/
+.minicardimg{
+    position: relative;
+    padding: 10px;
+    max-height: 80px;
+    float:right;
+    max-width: 80px;
+}
+.cardcontent{
+  position: relative;
+
+  h1{
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 200;
+  }
+  p{
+    opacity: 0.8;
+    font-weight: 100;
+  }
+}
+}
+.minicard:active{
+  transform:scale(0.9);
+  box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.15);
+}
+/* Iota https://github.com/korywakefield/iota/blob/master/iota.css Thanks!*/
+.grid {
+    display: grid;
+    grid-gap: var(--gap-xs, 2rem);
+    grid-auto-flow: var(--flow-xs, row);
+    grid-auto-columns: var(--auto-cols-xs, auto);
+    grid-auto-rows: var(--auto-rows-xs, auto);
+    grid-template-columns: var(--template-cols-xs, repeat(var(--cols-xs, 1), var(--cols-size-xs, 1fr)));
+    grid-template-rows: var(--template-rows-xs, none);
+    justify-content: var(--jc-xs, space-evenly);
+    justify-items: var(--ji-xs, stretch);
+    align-content: var(--ac-xs, center);
+    align-items: var(--ai-xs, stretch);
+  }
+  @media (min-width: 640px) {
+    .grid {
+      grid-gap: var(--gap-sm, 2rem);
+      grid-auto-flow: var(--flow-sm, row);
+      grid-auto-columns: var(--auto-cols-sm, auto);
+      grid-auto-rows: var(--auto-rows-sm, auto);
+      grid-template-columns: var(--template-cols-sm, repeat(var(--cols-sm, 2), var(--cols-size-sm, 1fr)));
+      grid-template-rows: var(--template-rows-sm, none);
+      justify-content: var(--jc-sm, space-evenly);
+      justify-items: var(--ji-sm, stretch);
+      align-content: var(--ac-sm, center);
+      align-items: var(--ai-sm, stretch);
+    }
+  }
+  @media (min-width: 860px) {
+    .grid {
+      grid-gap: var(--gap-md, 2rem);
+      grid-auto-flow: var(--flow-md, row);
+      grid-auto-columns: var(--auto-cols-md, auto);
+      grid-auto-rows: var(--auto-rows-md, auto);
+      grid-template-columns: var(--template-cols-md, repeat(var(--cols-md, 2), var(--cols-size-md, 1fr)));
+      grid-template-rows: var(--template-rows-md, none);
+      justify-content: var(--jc-md, space-evenly);
+      justify-items: var(--ji-md, stretch);
+      align-content: var(--ac-md, center);
+      align-items: var(--ai-md, stretch);
+    }
+  }
+  @media (min-width: 1080px) {
+    .grid {
+      grid-gap: var(--gap-lg, 2rem);
+      grid-auto-flow: var(--flow-lg, row);
+      grid-auto-columns: var(--auto-cols-lg, auto);
+      grid-auto-rows: var(--auto-rows-lg, auto);
+      grid-template-columns: var(--template-cols-lg, repeat(var(--cols-lg, 4), var(--cols-size-lg, 1fr)));
+      grid-template-rows: var(--template-rows-lg, none);
+      justify-content: var(--jc-lg, space-evenly);
+      justify-items: var(--ji-lg, stretch);
+      align-content: var(--ac-lg, center);
+      align-items: var(--ai-lg, stretch);
+    }
+  }
+  @media (min-width: 1300px) {
+    .grid {
+      grid-gap: var(--gap-xl, 2rem);
+      grid-auto-flow: var(--flow-xl, row);
+      grid-auto-columns: var(--auto-cols-xl, auto);
+      grid-auto-rows: var(--auto-rows-xl, auto);
+      grid-template-columns: var(--template-cols-xl, repeat(var(--cols-xl, 4), var(--cols-size-xl, 1fr)));
+      grid-template-rows: var(--template-rows-xl, none);
+      justify-content: var(--jc-xl, space-evenly);
+      justify-items: var(--ji-xl, stretch);
+      align-content: var(--ac-xl, center);
+      align-items: var(--ai-xl, stretch);
+    }
+  }
+  .grid.is-inline {
+    display: inline-grid;
+  }
+  .grid > * {
+    min-width: 0px;
+    max-width: 100%;
+    min-height: 0px;
+    grid-column: var(--col-xs, auto);
+    grid-row: var(--row-xs, auto);
+    justify-self: var(--js-xs, auto);
+    align-self: var(--as-xs, auto);
+  }
+  @media (min-width: 640px) {
+    .grid > * {
+      grid-column: var(--col-sm, auto);
+      grid-row: var(--row-sm, auto);
+      justify-self: var(--js-sm, auto);
+      align-self: var(--as-sm, auto);
+    }
+  }
+  @media (min-width: 860px) {
+    .grid > * {
+      grid-column: var(--col-md, auto);
+      grid-row: var(--row-md, auto);
+      justify-self: var(--js-md, auto);
+      align-self: var(--as-md, auto);
+    }
+  }
+  @media (min-width: 1080px) {
+    .grid > * {
+      grid-column: var(--col-lg, auto);
+      grid-row: var(--row-lg, auto);
+      justify-self: var(--js-lg, auto);
+      align-self: var(--as-lg, auto);
+    }
+  }
+  @media (min-width: 1300px) {
+    .grid > * {
+      grid-column: var(--col-xl, auto);
+      grid-row: var(--row-xl, auto);
+      justify-self: var(--js-xl, auto);
+      align-self: var(--as-xl, auto);
+    }
+  }
